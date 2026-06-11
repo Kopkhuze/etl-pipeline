@@ -5,4 +5,74 @@ A modular Python-based ETL (Extract, Transform, Load) pipeline built around the 
 Built as a data engineering portfolio project.
 
 ---
+## Project Structure
+
+## Project Structure
+
+    etl-pipeline/
+    ├── src/
+    │   ├── extract/        # Data ingestion — CSV, Parquet, Database, API
+    │   ├── transform/      # Cleaning, feature engineering, aggregations
+    │   └── load/           # Output to database or file
+    ├── data/
+    │   ├── raw/            # Raw source data (unmodified)
+    │   └── processed/      # Transformed, ready-to-use data
+    ├── tests/              # Unit tests for each pipeline stage
+    ├── pipeline.py         # Main entry point — runs the full pipeline
+    └── README.md
+---
+
+## Data Source
+
+**NYC Yellow Taxi Trip Records** — published monthly by the NYC Taxi & Limousine Commission (TLC).
+
+The extract module supports pulling this data from 4 different source types:
+- CSV files
+- Parquet files (including direct download from NYC TLC)
+- SQLite and PostgreSQL databases
+- NYC Open Data API (Socrata)
+
+---
+
+## Getting Started
+
+### Prerequisites
+
+- Python 3.11+
+- pip
+
+### Installation
+
+```bash
+git clone https://github.com/Kopkhuze/etl-pipeline.git
+cd etl-pipeline
+pip install -r requirements.txt
+```
+
+### Running the Pipeline
+
+```bash
+python pipeline.py
+```
+
+---
+
+## Tech Stack
+
+- **Language:** Python 3.11
+- **Data processing:** pandas
+- **Database:** SQLite / PostgreSQL
+- **Testing:** unittest
+
+---
+
+## Project Status
+
+In active development — extract module complete, transform and load coming soon.
+
+---
+
+## Author
+
+**Kobedi** — Data Engineering Graduate
 
