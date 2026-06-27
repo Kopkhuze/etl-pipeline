@@ -13,11 +13,21 @@ def log_config():
         },
         'handlers': {
             'default_handler': {
-                'class' 'logging.FileHandler',
-                'level' 'DEBUG',
+                'class': 'logging.FileHandler',
+                'level' :'DEBUG',
                 'formatter': 'standard',
                 'filename':os.path.join('logs','etl_pipeline.log'),
-
+                'encoding': 'utf-8',
             },
         },
+        'loggers': {
+            '': {
+               'handlers': ['default_handler'],
+                'level': 'DEBUG',
+                'propagate': False,
+            }
+        }
     }
+    logging.config.dictConfig(config)
+    if __name__=='__main__':
+    log_config()
