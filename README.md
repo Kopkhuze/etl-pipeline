@@ -11,7 +11,7 @@ Built as a data engineering portfolio project.
 
     etl-pipeline/
     ├── src/
-    │   ├── extract/        # Data ingestion — CSV, Parquet, Database, API
+    │   ├── extract/        # Data ingestion — CSV
     │   ├── transform/      # Cleaning, feature engineering, aggregations
     │   └── load/           # Output to database or file
     ├── data/
