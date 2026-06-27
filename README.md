@@ -24,13 +24,11 @@ Built as a data engineering portfolio project.
 
 ## Data Source
 
-**NYC Yellow Taxi Trip Records** — published monthly by the NYC Taxi & Limousine Commission (TLC).
+**Chicago Traffic Records** 
 
-The extract module supports pulling this data from 4 different source types:
+The extract module supports pulling this data from:
 - CSV files
-- Parquet files (including direct download from NYC TLC)
-- SQLite and PostgreSQL databases
-- NYC Open Data API (Socrata)
+
 
 ---
 
